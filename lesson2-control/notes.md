@@ -12,6 +12,7 @@ It's a good idea to add comments to your code if what you are doing may be diffi
 Docstrings allow you make multi-line comments. Docstrings are typically found near the top of Python files and at the top of functions and classes (we'll talk more about these later). Docstrings are used by Python to provide help output and usually describe what a python module, function or class does, what input is needed and what the results will be if the code is run.
 
 Consider the following lines of code from the previous lesson, basics.py.
+
     '''
     The following code shows you how to accept input from a user, do something with that input and print out a response.
     '''
