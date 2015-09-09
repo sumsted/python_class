@@ -1,4 +1,4 @@
-##Class 1 - Basics##
+##Lesson 1 - Basics##
 
 - Numbers
 - Operators
