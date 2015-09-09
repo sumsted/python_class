@@ -168,8 +168,8 @@ For loops can walk through a list.
 
     fishes = ["bass", "tuna", "jelly"]
     
-    fish = input("Name an aquatic animal?")
     # The if statement and code blocks
+    fish = input("Name an aquatic animal?")
     if fish in fishes:
         print(fish, "is a fish")
     elif fish[0] == "S":
@@ -177,8 +177,8 @@ For loops can walk through a list.
     else:
         print(fish, "is not a fish")
     
-    total_fish = 0
     # The while loop
+    total_fish = 0
     while total_fish <= 3:
         total_fish = total_fish + 1
         print("total_fish", total_fish)
