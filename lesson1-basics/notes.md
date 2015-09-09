@@ -5,6 +5,7 @@
 - Order of operations
 - Variables
 - Strings
+- Lists
 - Booleans
 - Print and input
 
@@ -182,6 +183,25 @@ You may pull individual letters from strings by adding [ ] square brackets to th
     >>> name[3]
     'k'
 
+##Lists##
+A list in Python is grouping or collection of objects, such as a colelction of strings. For example you could have a list that looks like this:
+
+    pokemon = ["Bukbasaur", "Squirtle", "Charmander"]
+    
+You might also have a list of numbers, like this:
+
+    ages = [10, 13, 20, 5]
+
+You can pull individual items from a list using  [ ] square brackets, passing in the index of the value you would like returned. As with strings this index begins at 0.
+
+    ages[0]
+    10
+    
+    pokemon[2]
+    'Charmander'
+    
+We'll study lists more when we look at loops in the next lesson.
+
 ##Booleans##
 Think of a boolean as True or False, yes or no. Booleans can be identified using comparison operators.
 
@@ -321,3 +341,11 @@ The input function returns a string. If you would like to use the string returne
     
     >>> print("Is your age == 11,", int(age) == 11)
     Is your age == 11, False
+
+    >>> days_of_the_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday]
+    >>> days_of_the_week[3]
+    'Wednesday'
+    
+    >>> numbers = [1, 3, 5, 7, 11]
+    >>> 4 * numbers[1]
+    12
