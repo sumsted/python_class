@@ -4,9 +4,7 @@
 - Block of code
 - if statement
 - while loop
-- range() function
 - for loop
-- style
 
 ##Comments##
 It's a good idea to add comments to your code if what you are doing may be difficult to understand or if you need to leave a reminder to make a change at a later time. Python has two types of comments, docstrings and line comments.
@@ -64,10 +62,10 @@ Consider this code.
         print(number * 3)
     print("I'm out of a code block")
 
-The code block above is found after the if statement.
+There is a code block after the if statement.
 
 ##if statement##
-Use the if statement and a boolean to decide what code blocks should run. 
+Use the if statement and a comparison to decide what code blocks should run. 
 
     if True:
         some_number = 2
@@ -82,7 +80,7 @@ Use the if statement and a boolean to decide what code blocks should run.
         another_number = some_number * 4
         print('this code ran', another_number)
         
-The code block beneath an if statement will execute if the coparison is True. Use the else statement if you would like to offer an alternative code block that executes when the coparison is False.
+The code block beneath an if statement will execute if the comparison is True. Use the else statement if you would like to offer an alternative code block that executes when the coparison is False.
 
 To check if some_number is above a certain value you could do something like this.
     
@@ -161,3 +159,29 @@ For loops can walk through a list.
 
 
 ##What we learned
+
+    '''
+    This is what I learned today.
+    First, comments
+    '''
+
+    fishes = ["bass", "tuna", "jelly"]
+    
+    fish = input("Name an aquatic animal?")
+    # The if statement and code blocks
+    if fish in fishes:
+        print(fish, "is a fish")
+    elif fish[0] == "S":
+        print(fish, "may be a fish")
+    else:
+        print(fish, "is not a fish")
+    
+    total_fish = 0
+    # The while loop
+    while total_fish <= 3:
+        total_fish = total_fish + 1
+        print("total_fish", total_fish)
+    
+    # The for loop
+    for fish in fishes:
+        print("fish", fish)
