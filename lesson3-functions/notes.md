@@ -1,6 +1,6 @@
 #Lesson 3 - Functions#
 
-- Why do we have functions?
+- Why are functions?
 - Define a function
 - Use parameters
 - Return results
