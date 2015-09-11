@@ -322,7 +322,7 @@ The input function returns a string. If you would like to use the string returne
     >>> int(age) * 3
     24
 
-##What have we learned?##
+##What we learned##
 
     >>> name = input("What is your name? ")
     What is your name? John
