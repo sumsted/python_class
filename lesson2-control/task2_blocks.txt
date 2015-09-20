@@ -1,0 +1,12 @@
+Code Blocks
+
+Python is an indented language. What this means is that sections of code that we run begin and end with an indentation. Python code blocks are typically indented with 4 spaces. Blocks of code can be found in functions, classes, if, while and for loops.
+Consider this code.
+    print("I'm out of a code block")
+    if True:
+        print("I'm in a block")
+        number = 4
+        print(number * 3)
+    print("I'm out of a code block")
+
+There is a code block after the if statement.

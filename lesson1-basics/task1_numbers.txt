@@ -1,0 +1,11 @@
+Numbers
+
+
+Whole numbers are called integers or are of type int.
+    1   2   3  4  5   13456
+
+Numbers with a decimal component are called floating point numbers and are of type float.
+    1.0 2.123 3.14
+
+Play with displaying some numbers.
+This task makes use of concepts that we'll cover in detail later, like, print() and variables. For now focus on the numbers.

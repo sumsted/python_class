@@ -1,0 +1,40 @@
+Comments
+
+It's a good idea to add comments to your code if what you are doing may be difficult to understand or if you need to leave a reminder to make a change at a later time. Python has two types of comments, docstrings and line comments.
+Docstrings allow you make multi-line comments. Docstrings are typically found near the top of Python files and at the top of functions and classes (we'll talk more about these later). Docstrings are used by Python to provide help output and usually describe what a python module, function or class does, what input is needed and what the results will be if the code is run.
+Consider the following lines of code from the previous lesson, basics.py.
+    '''
+    The following code shows you how to accept input from a user, do something with that input and print out a response.
+    '''
+    name = input("What is your name? ")
+    age = input("How old are you "+name+"? ")
+    print("Hello, ", name, ". You are ", age, " years old.")
+    # We convert age to an int before we multiply it by 10.
+    print(age," * ", 10, " = ", (int(age) * 10))
+    print("The first character of your name is ",name[0])
+    print("Is your age == 11,", int(age) == 11)
+
+If you were to start Python and import this file, basics would run. And then if you type help(basics) you would see the docstring for this file.
+        >> import basics
+        What is your name? John
+        How old are you asdf? 2
+        Hello,  asdf . You are  2  years old.
+        2  *  10  =  20
+        The first character of your name is  a
+        Is your age == 11, False
+        >>> help(basics)
+
+        Help on module basics:
+
+    NAME
+        basics - The following code shows you how to accept input from a user, do something with that input and print out a response.
+
+    DATA
+        age = '2'
+        name = 'John'
+
+    FILE
+        /Users/scottumsted/Projects/Workspaces/git_workspace/python_class/class1-basics/basics.py
+
+Another type of comment is the line comment. Line comments are indicated using the # hashtag. There's one line comment in the previous python file. We typically use line comments to describe complex features or to remind us to come back and change code later.
+    # We convert age to an int before we multiply it by 10.

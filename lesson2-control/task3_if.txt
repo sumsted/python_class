@@ -1,0 +1,42 @@
+if Statement
+
+Use the if statement and a comparison to decide what code blocks should run.
+    if True:
+        some_number = 2
+        print('this code ran', some_number)
+
+    if False:
+        another_number = 4
+        print('did this code run?', another_number)
+
+    some_number = 2
+    if some_number <= 2:
+        another_number = some_number * 4
+        print('this code ran', another_number)
+
+The code block beneath an if statement will execute if the comparison is True. Use the else statement if you would like to offer an alternative code block that executes when the coparison is False.
+To check if some_number is above a certain value you could do something like this.
+    some_number = 3
+    if some_number > 4:
+        print('some_number is greater than 4')
+
+    if some_number <= 4:
+        print('some_number is less than or equal to 4')
+
+But this would be easier to read and less likely to introduce an error. only one of the code blocks in this statement will run.
+    some_number = 3
+    if some_number > 4:
+        print('some_number is greater than 4')
+    else:
+        print('some_number is less than or equal to 4')
+
+The elif else if statement will let you chain together comparisons. Again this makes your code easier to understand and ensures that only one of the code blocks runs.
+    some_number = 3
+    if some_number > 4:
+        print('some_number is greater than 4')
+    if 2 > some_number <= 4:
+        print('some_number is greater than 2 and less than or equal to 4')
+    if some_number > 0:
+        print('some_number is greater than 0')
+    else:
+        print('some_number is less than or equal to 0')

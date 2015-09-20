@@ -1,0 +1,17 @@
+Define a functions
+
+Functions are sections of code that we can reuse throughout our program. Functions usually are defined to do one thing really well. One function that you've used in the previous lessons is the print() function. Print does one thing really well, it pushes data to the screen. Another function we've used previously is range(). This function generates numbers for us that we can loop through.
+Range() and print() are examples of system functions. System functions are functions that are available to you in Python. Functions that you create are called user defined functions. You might create a function to calculate the sum of two numbers or to create a greeting. These are special custom functions that you create.
+Similar to variables, all functions must have a name. The first line of a function is where we name the function. The def keyword is used to identify the name of a function. It comes before the name. Parentheses come after the name of the function. The code that makes up a function is in an indented block below this line. For example:
+    def say_hello():
+        print('Hello')
+
+To run or call a function just type the name and the parantheses.
+    >>> def hello():
+    ...     name = input('Name? ')
+    ...     print('Hello', name)
+    ...
+    >>> hello()
+    Name? Jack
+    Hello Jack
+    >>>

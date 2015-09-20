@@ -1,0 +1,21 @@
+Return results
+
+Functions may return results. These results can be displayed on the screen or used in other calculations.
+    >>> def power(num, pow):
+    ...     return num**pow
+    ...
+    >>> power(2, 3)
+    8
+    >>> 4 + power(2,3)
+    12
+    >>> print('power 2**3 =', power(2, 3))
+    power 2**3 = 8
+
+In Python functions may return multiple values.
+    >>> def hello(name, age):
+    ...     greeting = 'Hello' + name
+    ...     in_ten_years = age + 10
+    ...     return greeting, in_ten_years
+    >>> g,t = hello('John', 10)
+    >>> print(g, t)
+    Hello John 20

@@ -1,0 +1,22 @@
+Variables
+
+You've seen a few variables in the previous exercises.
+Variables are labels or tags or names that you can assign to a number or to a math operation. They let you store a number or result to use later in your program.
+    >>> some_number = 4
+
+    >>> some_number
+    4
+
+    >>> result = some_number * 8
+
+    >>> result
+    32
+
+    >>> radius = 5
+
+    >>> pi = 3.14159
+
+    >>> area = pi * radius**2
+
+    >>> area
+    78.53975

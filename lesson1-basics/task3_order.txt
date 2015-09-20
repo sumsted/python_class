@@ -1,0 +1,30 @@
+Order of operations
+
+You are probably familiar with order of operations. Python follows order of operations.
+For example:
+Here 3 * 5 is calculated before 2 is added to it.
+    >>> 2 + 3 * 5
+    17
+
+2 to the 3rd power is calculated before 5 is multiplied to the result.
+    >>> 2**3 * 4
+    32
+
+    >>> 12.56 / 2**2
+    3.14
+
+    >>> 2 * 3 - 4 / 2
+    4.0
+
+You may use parentheses to group operations, overriding normal order.
+    >>> (2 + 4) * 3
+    18
+
+    >>> (4 * 2)**2
+    64
+
+    >>> (9  + 3) * (9 + 6)
+    180
+
+Order of operations is:
+    +-(unary)  ** ()   *   /   //   +  -

@@ -1,0 +1,32 @@
+Operators are symbols we use to perform arithmetic on numbers in Python. Some operators may also be used to manipulate strings or words or other objects.
+Here are a few examples of arithmetic operators. The examples below use ints. If using ints in operations you will usually receive ints as the result, but in Python 3 the / division operator will return a float.
+    >>> 4 + 3
+    7
+
+    >>> 4 * 3
+    12
+
+The result of 10 divided by 3 gives you a float or floating point number.
+    >>> 10 / 3
+    3.3333333333333335
+
+// floor division operator, the result has no decimal component. It will return an int.
+    >>> 10 // 3
+    3
+
+** power operator
+    >>> 3**2
+    9
+
+Placing a - minus sign in front of a number makes it negative. The minus sign by itself is called a negative unary operator because it only needs one number to perform a calculation. There's also a positive or + plus sign unary operator, but you'll likely never use it.
+    >>> -4
+    -4
+
+    >>> -(4-5)
+    1
+
+    >>> +4
+    4
+
+    >>> +(4-5)
+    -1

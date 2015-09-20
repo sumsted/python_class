@@ -1,3 +1,9 @@
+'''
+Created by @musegarden Al
+Presented at https://github.com/nelsonam/meetup-sept15
+
+
+'''
 import tweepy
 
 consumer_key='WGgMJ45kp75aE1AFwKmtdz02X'

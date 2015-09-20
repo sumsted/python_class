@@ -1,16 +1,19 @@
-import sys
-
+'''
+Created by @musegarden Al
+Presented at https://github.com/nelsonam/meetup-sept15
+'''
 import tweepy
 from wordcloud import WordCloud
 
 # from command prompt
+# pip install wordcloud
 # pip install numpy
-# pip install ???
+# pip install pil
 
-consumer_key='WGgMJ45kp75aE1AFwKmtdz02X'
-consumer_secret='4JLDBL6LWtHAuaEAEWcvGQdv0rA38XyWdESt7mt54mOCRwAKb4'
-access_token='3718506375-NjC2n870SayUqGC7dK3Pp7CvLH1o5zTBOkjtCSf'
-access_token_secret='YiDmYxNcmu55cn044BifipbGVfocsf9boUmWLELxhHtWD'
+consumer_key = 'WGgMJ45kp75aE1AFwKmtdz02X'
+consumer_secret = '4JLDBL6LWtHAuaEAEWcvGQdv0rA38XyWdESt7mt54mOCRwAKb4'
+access_token = '3718506375-NjC2n870SayUqGC7dK3Pp7CvLH1o5zTBOkjtCSf'
+access_token_secret = 'YiDmYxNcmu55cn044BifipbGVfocsf9boUmWLELxhHtWD'
 
 stops = ["a", "about", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are", "aren't", "as",
          "at", "be", "because", "been", "before", "being", "below", "between", "both", "but", "by", "can't", "cannot",
@@ -29,7 +32,6 @@ stops = ["a", "about", "above", "after", "again", "against", "all", "am", "an", 
 
 
 def download_tweets(username):
-
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
 
@@ -40,15 +42,16 @@ def download_tweets(username):
     num_tweets = 100
 
     # access your timeline
-    tweets = api.user_timeline(screen_name = username, count = num_tweets)
+    tweets = api.user_timeline(screen_name=username, count=num_tweets)
 
     # start a string to hold your tweet info
     my_tweets = ''
 
     for tweet in tweets:
-        my_tweets +=  tweet.text.encode("utf-8")
+        my_tweets += tweet.text#.encode("utf-8")
 
     return my_tweets
+
 
 def genWordCloud(filename):
     text = download_tweets('marvel')
@@ -56,10 +59,11 @@ def genWordCloud(filename):
     words = WordCloud(width=500, height=500,
                       font_path='./DejaVuSans.ttf',
                       stopwords=stops)
+
     words.generate(text)
-    words.to_file(filename.split('.')[0] + '.png')
+    words.to_file(filename)
 
 
 if __name__ == '__main__':
-    filename = 'umstedp_tweets.csv'#sys.argv[1]
+    filename = 'mycloud.png'
     genWordCloud(filename)

@@ -1,0 +1,61 @@
+Booleans
+
+Think of a boolean as True or False, yes or no. Booleans can be identified using comparison operators.
+    ==   !=   <   >   <=   >=
+
+    >>> small = 3
+
+    >>> small == 3
+    True
+
+    >>> small == 4
+    False
+
+    >>> large = 5
+
+    >>> small == large
+    False
+
+    >>> small > large
+    False
+
+    >>> small < large
+    True
+
+    >>> small <= large
+    True
+
+    >>> small >= large
+    False
+
+    >>> small != large
+    True
+
+You may assign a boolean value like True or False to a variable.
+    >>> b = True
+
+    >>> b == True
+    True
+
+    >>> b == False
+    False
+
+There are some special boolean operations in python.
+    >>> 'J' in 'Jack'
+    True
+
+    >>> 'J' not in 'Jack'
+    False
+
+    >>> 'k' not in 'Jack'
+    False
+
+The and operator will return true if the comparisons on both sides are True. The or operator will return true if one of the two comparisons surrounding it is True.
+    >>> x = 3
+    >>> y = 4
+
+    >>> x == 3 and y == 5
+    False
+
+    >>> x == 3 or y == 5
+    True

@@ -1,0 +1,8 @@
+while Loop
+
+If you need repeatedly run a code block use a loop. Like the if statement the while loop uses a comparison. If the comparison is True the code block will continue to run.
+    some_number = 0
+    while some_number < 100:
+        some_number = some_number + 10
+        print('some_number is less than 100', some_number)
+    print('some_number is now', some_number)
