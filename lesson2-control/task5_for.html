@@ -1,0 +1,40 @@
+<html>
+<h3>for Loop</h3>
+Another type of loop is the for loop. The for loop does not use a comparison like the while loop. The for loop is useful when you would like to use a counter in your code block. Also useful if you would like to pull individual values from a list or collection into your code block. This is called iteration.
+<br/>
+You can use the range() function to count numbers.
+<br/>
+<pre>
+    sum = 0
+    for number in range(10):
+        sum = sum + number
+        print('number',number,'sum',sum)
+
+    number 0 sum 0
+    number 1 sum 1
+    number 2 sum 3
+    number 3 sum 6
+    number 4 sum 10
+    number 5 sum 15
+    number 6 sum 21
+    number 7 sum 28
+    number 8 sum 36
+    number 9 sum 45
+</pre>
+<br/>
+For loops can walk through a list.
+<br/>
+<pre>
+    names = ['Steve', 'Ned', 'Klaus', 'Jane']
+    for name in names:
+        if name == 'Klaus':
+            print('Bye',name)
+        else:
+            print('Hi',name)
+
+    Hi Steve
+    Hi Ned
+    Bye Klaus
+    Hi Jane
+</pre>
+</html>

@@ -1,0 +1,69 @@
+<html>
+<h3>Strings</h3>
+Strings are a group of characters.  A character could be a number, letter, or symbol like an operator or punctuation. Strings can also be made up of characters from other languages.
+<br/>
+Strings are identifed either by ' ' single quotes or " " double quotes.<br/>
+<pre>
+    >>> "what do you call someone with no nose and no body"
+    'What do you call someone with no nose and no body?'
+
+    >>> 'nobody knows'
+    'nobody knows'
+</pre><br/>
+Strings may be stuck together to make bigger strings. This is called concatenation. Concatentation uses the + plus operator.<br/>
+<pre>
+    >>> 'Big' + ' ' + 'Ben'
+    'Big Ben'
+</pre><br/>
+Having the option of a single or double quote let's you easily add single or double quotes to your string.<br/>
+<pre>
+    >>> "Joe's car"
+    "Joe's car"
+
+    >>> 'John said, "Get off your horse and drink your milk!"'
+    'John said, "Get off your horse and drink your milk!"'
+</pre><br/>
+Variables can also hold strings.<br/>
+<pre>
+    >>> first_name = 'Steve'
+
+    >>> last_name = 'Martin'
+
+    >>> full_name = first_name + ' ' + last_name
+
+    >>> full_name
+    'Steve Martin'
+</pre><br/>
+You may use the multiply operator to create a long string from a small one.<br/>
+<pre>
+    >>> short_name = "three "
+
+    >>> short_string = "three "
+
+    >>> long_string = short_string * 3
+
+    >>> long_string
+    'three three three '
+</pre><br/>
+You may use formatting to create a larger string.<br/>
+<pre>
+    >>> "four : %d" % 4
+    'four : 4'
+</pre><br/>
+You may pull individual letters from strings by adding [ ] square brackets to the end of the string and specifying the position of the character that you want to pull between the brackets. The first position is 0.
+<br/><pre>
+    >>> name = "Jack"
+
+    >>> name[0]
+    'J'
+
+    >>> name[1]
+    'a'
+
+    >>> name[2]
+    'c'
+
+    >>> name[3]
+    'k'
+</pre>
+</html>

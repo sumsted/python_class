@@ -1,0 +1,25 @@
+<html>
+<h3>Use parameters</h3>
+Parameters are values that you pass into a function from outside a function. You've done this previously with the print() and range() functions. To add parameters to your user defined function add variable names within the parantheses that come after the function name. These variables will be available within the code block of your function.
+<br/><pre>
+    >>> def hello(name):
+    ...     print('Hello',name)
+    ...
+    >>> hello('John')
+    Hello John
+
+    >>> def to_third_power(num):
+    ...     print(num**3)
+    ...
+    >>> to_third_power(2)
+    8
+</pre><br/>
+You may define functions with multiple parameters.
+<br/><pre>
+    >>> def power(num, pow):
+    ...     print(num**pow)
+    ...
+    >>> power(2, 3)
+    8
+</pre>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<h3>Print and Input</h3>
+Use print to write strings to the screen. You may print messages and string variables. You may also print other data, like numbers and booleans, if you convert those to strings before printing.
+<br/>
+To print, surround the text you would like to print with ( ) parentheses.<br/>
+<pre>
+    >>> print("hello")
+    hello
+
+    >>> print("hello " + "John")
+    hello John
+</pre><br/>
+Numbers may be printed by themselves.<br/>
+<pre>
+    >>> print(4)
+    4
+</pre><br/>
+Strings and numbers cannot be added together.<br/>
+<pre>
+    >>> print("num: " + 4)
+    Traceback (most recent call last):
+      File "stdin", line 1, in
+    TypeError: Can't convert 'int' object to str implicitly
+</pre><br/>
+You may print strings and ints together using a , comma to separate the values.<br/>
+<pre>
+    >>> print("num: ", 4)
+    num: 4
+</pre><br/>
+It's more common to format a string that you plan to print.<br/>
+<pre>
+    >>> print("num: %d" % 4)
+    num: 4
+</pre><br/>
+You may ask for a value and assign it to a variable using the input function.<br/>
+<pre>
+    >>> name = input('What is your name? ')
+    What is your name? John
+
+    >>> print("Hello %s" % name)
+    Hello John
+</pre><br/>
+The input function returns a string. If you would like to use the string returned as a number pass it to the int() function.<br/>
+<pre>
+    >>> age = input("How old are you? ")
+    How old are you? 8
+
+    >>> age
+    '8'
+
+    >>> age * 3
+    '888'
+
+    >>> int(age) * 3
+    24
+</pre>
+</html>
