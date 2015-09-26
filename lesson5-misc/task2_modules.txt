@@ -1,18 +1,14 @@
-<html>
-<h3>Modules and Packages</h3>
-<br/>
+Modules and Packages
+
 A Python module is file that contains Python code. Modules help you group togather variables,
 functions and classes that are related. For example you might have a module called animals that
 contains a list of animals. This module might also contain functions that let you do animal related
 things.
-<br/>
 
 The import statement is used to add the code from one module to another.
-<br/>
 
 You could have a module called animals.py that looks like this.
-<br/>
-<pre>
+
     animals_dict = {
         'cow': 'four legged bovine, vegan, sometimes spotted',
         'cat': 'four legged feline, omnivore, usually furry, meows alot',
@@ -21,42 +17,29 @@ You could have a module called animals.py that looks like this.
 
     def sorted_animals():
         return sorted(animals)
-</pre>
-<br/>
-Then in my_code.py you could import specific objects from the animals.py module.
-<br/>
 
-<pre>
+Then in my_code.py you could import specific objects from the animals.py module.
+
     from animals import animals_dict
 
     first = animals_dict['cat']
     print('cat -', first)
-</pre>
 
-<br/>
 You could import all of the objects in animals by using a *.
-<br/>
 
-<pre>
     from animals import *
 
     first = animals_dict['cat']
     print('cat -', first)
 
     print(sorted_animals())
-</pre>
 
-<br/>
 You can also import all objects using import by itself. In this case you must specify
 the name of the module when using the items in the module.
-<br/>
 
-<pre>
     import animals
 
     first = animals.animals_dict['cat']
     print('cat -', first)
 
     print(animals.sorted_animals())
-</pre>
-</html>
