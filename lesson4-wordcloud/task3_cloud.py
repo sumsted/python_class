@@ -54,7 +54,7 @@ def download_tweets(username):
 
 
 def genWordCloud(filename):
-    text = download_tweets('marvel')
+    text = download_tweets('numsted')
 
     words = WordCloud(width=500, height=500,
                       font_path='./DejaVuSans.ttf',

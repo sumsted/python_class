@@ -16,4 +16,4 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-api.update_status(status="Learing python at Memphis Chinese School!")
+api.update_status(status="Learning python at Memphis Chinese School!")
