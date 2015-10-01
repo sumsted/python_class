@@ -1,0 +1,10 @@
+
+.splash-container {
+    background: url('/static/img/eclipse.jpg');
+    background-size:cover;
+    height: 100%;
+}
+
+.home-menu {
+    background: rgba(45, 62, 80, 0.40);
+}

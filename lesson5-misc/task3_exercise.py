@@ -1,7 +1,9 @@
 # import the animals.py module
 
+import animals
 
 # ask the user for their favorite animal and store it in a variable called favorite
+
 
 
 # using an if statement check to see if favorite is in the animals_dict
