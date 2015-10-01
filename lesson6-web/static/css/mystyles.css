@@ -8,3 +8,43 @@
 .home-menu {
     background: rgba(45, 62, 80, 0.40);
 }
+
+.pure-button {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 0.43em 2em;
+    border-radius: 5px;
+}
+
+button.pure-button-primary {
+    background: white;
+    color: #1f8dd6;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.pure-form input[type] {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 25%;
+    margin-bottom: 0em;
+}
+
+.pure-form legend {
+    display: block;
+    width: 100%;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.2em;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    font-size: 2.5em;
+}

@@ -23,9 +23,27 @@
 </div>
 <div class="splash-container">
     <div class="splash">
-        <h1 class="splash-head">Big Bold Text</h1>
-        <p class="splash-subhead"></p>
-        <p><a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a></p>
+
+        <!-- ************   this is the start of the form ************ -->
+        <form class="pure-form" action="/multiply" method="post">
+            <fieldset>
+                <legend>Multiply a couple of numbers</legend>
+
+                <input name="first-number" type="number" placeholder="Number">
+                <input name="second-number" type="number" placeholder="Number">
+
+                <button type="submit" class="pure-button pure-button-primary">Multiply</button>
+            </fieldset>
+        </form>
+        <!-- ************   this is the end of the form ************ -->
+
+
+        <!-- ************   our results are displayed here,
+                            notice {{result }}, that is the template field
+                            where our results are displayed ************ -->
+        <p class="splash-subhead">{{result}}</p>
+
+
     </div>
 </div>
 </body>
