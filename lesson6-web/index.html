@@ -13,10 +13,10 @@
 <body>
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">My Page</a>
+        <a class="pure-menu-heading" href="#">My Page</a>
         <ul class="pure-menu-list">
             <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
+            <li class="pure-menu-item"><a href="static/img/webpage.png" target="_blank" class="pure-menu-link">Webpage</a></li>
             <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
         </ul>
     </div>
@@ -24,24 +24,32 @@
 <div class="splash-container">
     <div class="splash">
 
+
+
         <!-- ************   this is the start of the form ************ -->
-        <form class="pure-form" action="/multiply" method="post">
+        <!-- Forms have an action that is used by the server to determine which function to run. -->
+        <!-- They have a method that tells the server how the data will be sent. -->
+        <!-- And forms will have a number of fields, such as input, that collect the data to be send to the server. -->
+        <form class="pure-form" action="/calculate" method="post">
             <fieldset>
                 <legend>Multiply a couple of numbers</legend>
 
                 <input name="first-number" type="number" placeholder="Number">
                 <input name="second-number" type="number" placeholder="Number">
 
-                <button type="submit" class="pure-button pure-button-primary">Multiply</button>
+                <button type="submit" class="pure-button pure-button-primary">Calculate</button>
             </fieldset>
         </form>
         <!-- ************   this is the end of the form ************ -->
 
 
+
         <!-- ************   our results are displayed here,
-                            notice {{result }}, that is the template field
+                            notice {{result}}, this is a template field
                             where our results are displayed ************ -->
         <p class="splash-subhead">{{result}}</p>
+        <!-- ************ end of results *************-->
+
 
 
     </div>

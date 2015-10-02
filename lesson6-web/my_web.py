@@ -1,5 +1,8 @@
 from bottle import route, run, template, static_file, get, post, request
 
+# http://bottlepy.org/docs/dev/tutorial.html
+
+
 
 @get('/')
 def get_index():
@@ -8,8 +11,8 @@ def get_index():
 
 
 
-@post('/multiply')
-def post_index():
+@post('/calculate')
+def calculate():
     # get values from request and store them in variables
     first_number = int(request.forms.get('first-number'))
     second_number = int(request.forms.get('second-number'))
@@ -28,9 +31,6 @@ def post_index():
 
 @route('/static/<filepath:path>')
 def server_static(filepath):
-    """
-    Display our images, styles and scripts.
-    """
     return static_file(filepath, root='./static')
 
 

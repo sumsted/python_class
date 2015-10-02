@@ -12,7 +12,7 @@
 .pure-button {
     background-color: #1f8dd6;
     color: white;
-    padding: 0.43em 2em;
+    padding: 0.42em 2em;
     border-radius: 5px;
 }
 
@@ -47,4 +47,9 @@ button.pure-button-primary {
     letter-spacing: 0.05em;
     opacity: 0.8;
     font-size: 2.5em;
+}
+
+.pure-menu-selected .pure-menu-link,
+.pure-menu-selected .pure-menu-link:visited {
+    color: #fff;
 }
