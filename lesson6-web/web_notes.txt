@@ -1,0 +1,38 @@
+Our First Website
+
+HTML - hyper text markup language - what the server sends to the browser for display
+
+request - What the browser sends to the server. The server tries to match the request to an expected list of requests.
+
+response - The server will return a response for every request. Responses include results, HTML, and status codes.
+
+template - The server keeps templates of HTML files available. These files can be updated with Python and sent back in the response.
+
+static - The static folder contains all files that are never updated, such as images, style sheets (css), and script files (js).
+
+dynamic - Content or HTML templates that are changed by Python before being sent back to the user are dynamic.
+
+framework - A set of tools that help programers create websites. It includes shortcuts for looking at requests and for building responses.
+
+bottle.py - A simple web server framework written for Python. Bottle is in one module.
+
+form - HTML that allows a page to collect data from the user. Usually includes input fields and a submit button.
+
+method - Type of request submitted from the browser to the server. Form submissions allow GET and POST.
+
+GET - Adds all form parameters to a URL.
+
+POST - Places form parameters in the body of the request.
+
+
+Steps
+
+1. Browser sends a request for a page to the server. All requests include a path (or action) and a method (GET, POST, etc.).
+
+2. Server looks for a path and method that matches to a Python function.
+
+3. If a match is found, the matching function reads the request, builds a response and returns the response.
+
+4. The response includes a status code (200 if success) and content, in our case HTML.
+
+5. The browser displays the response and HTML if it was sent.
