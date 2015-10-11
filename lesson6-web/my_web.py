@@ -16,12 +16,13 @@ def calculate():
     # get values from request and store them in variables
     first_number = int(request.forms.get('first-number'))
     second_number = int(request.forms.get('second-number'))
+    third_number = int(request.forms.get('third-number'))
 
     # calculate and store product in variable
-    product = first_number * second_number
+    product = first_number + second_number +third_number
 
     # format result
-    result = '%d x %d = %d' % (first_number, second_number, product)
+    result = 'scott says %d + %d + %d = %d' % (first_number, second_number, third_number, product)
 
     # display form with result
     return template('index', result=result)
