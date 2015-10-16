@@ -22,6 +22,7 @@ def calculate():
     product = first_number + second_number +third_number
 
     # format result
+
     result = 'scott says %d + %d + %d = %d' % (first_number, second_number, third_number, product)
 
     # display form with result
