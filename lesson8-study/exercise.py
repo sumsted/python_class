@@ -1,4 +1,5 @@
 # 1. what is the output of the following code
+#    place your answer in a comment
 
 x = 3
 y = 8
@@ -8,7 +9,10 @@ if x >= 0 and y < 9:
 else:
     print('no')
 
+
 # 2. what is the output of the following code
+#    place your answer in a comment
+
 x = -3
 y = 8
 
@@ -16,6 +20,7 @@ if x > 0 or y < 9:
     print('yes')
 else:
     print('no')
+
 
 # 3. convert the following equation to Python,
 #    replace None with your answer
@@ -43,18 +48,27 @@ print(y)
 
 
 
-# 6. write a function called add_ten
+# 6. correct rocket.py so that it only prints to the
+#    screen when height is greater than 0.0 and
+#    time <= 100.0
+
+
+
+# 7. write a function called add_ten
 #    the function should take a parameter called
 #    number and return the number with 10 added to it
+#    call the function passing in a number, print the output
 
 
 
-# 7. create a list called my_friends
+# 8. create a list called my_friends, replace None
 #    add your friends names to it
 #    then loop through the list to print each name
 
+my_friends = None
 
-# 8. add the following cities and populations to the dictionary
+
+# 9. add the following cities and populations to the dictionary
 #    then check to see if 'Dallas' is in the dictionary
 #    if Dallas is print the population
 #    if Dallas is not in the dictionary print 'not found'
@@ -70,7 +84,8 @@ if None:
 else:
     print('not found')
 
-# 9. import the add_message from the echo module
+
+# 10. import the add_message from the echo module
 #    call the add_message function pass your name and a message
 #    as parameters and print the result
 
