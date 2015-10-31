@@ -2,7 +2,7 @@
 #    place your answer in a comment
 
 x = 3
-y = 8
+y = 9
 
 if x >= 0 and y < 9:
     print('yes')
@@ -40,11 +40,16 @@ print(y)
 #    3. subtract 32 from f and divide the result by 1.8, store in variable c
 #    4. print out the temperature in variable c
 
+f = input('temp in f? ')
+f = float(f)
+c = (f - 32) / 1.8
+print(c)
 
 
 # 5. write code that loops from 0 to 19 using range()
 #    for each iteration raise the current loop value to the power of 3
 #    print the result of each iteration
+
 
 
 
@@ -65,7 +70,10 @@ print(y)
 #    add your friends names to it
 #    then loop through the list to print each name
 
-my_friends = None
+my_friends = ['bob','jack','karen']
+
+for name in my_friends:
+    print(name)
 
 
 # 9. add the following cities and populations to the dictionary

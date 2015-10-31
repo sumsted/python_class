@@ -10,7 +10,7 @@ def launch_rocket():
     time = 0.0
     height = start_height
 
-    while time <= 100.0:
+    while height > 0.0 and time <= 100.0:
         height = rocket_height(time)
         spaces = ' ' * (int(height) // 10)
         print('%6.2f seconds   %9.4f meters :%s*' % (time, height, spaces))

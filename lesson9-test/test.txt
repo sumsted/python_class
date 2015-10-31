@@ -1,0 +1,69 @@
+Code the following in function.py
+---------------------------------
+1. Create a function called power. It should expect two parameters called n and p.
+    2. Inside function power...
+       Create a variable called result assign it the value of n raised to the power of p.
+    3. Return the variable result.
+
+4. Outside of the power function create a variable called answer.
+5. The variable answer should be assigned the value of power(2, 3)
+6. Print the variable answer.
+
+7. Run function.py.
+
+
+Code the following in groups.py
+------------------------------------
+1. Create a dictionary called robots and assign it the following entries.
+
+r2d2    beep twirp beep twirl
+c3p0    blah whine blah
+bb8     whirl whirl whirl
+
+2. Using the robots dictionary print the value of key r2d2.
+3. Add a new robot to the robots dictionary with the following key and value.
+
+wall-e  walleee ooohhh
+
+4. Using the robots dictionary print the value of key wall-e.
+
+5. Create a list called colors and assign the following entries.
+
+red
+green
+blue
+
+6. Append the color orange to the colors list.
+
+7. Iterate through the colors list using a for loop. Print each color.
+    8. If the color is blue, print 'Go Tigers!'
+
+9. Run collections.py.
+
+
+Code the following in chat.py
+------------------------------
+1. Import the echo module.
+
+2. Ask user for name and store it in the variable name.
+
+3. Create a variable named message and assign it the string
+"hello, this is "+name
+
+4. Print the string    Enter message or "quit" to end.
+
+5. Call the function poll_messages() from module echo.
+6. Create a while loop that runs as long as message is not equal to the string "quit"
+
+    7. In the while loop do the following stuff.
+        8. Call function add_message from module echo passing in name and message as parameters.
+
+        9. Now create an input statement that asks the user to enter a new message
+           display a question mark from your input statement
+           store the data the user enters into the message variable
+
+10. Outside of the while loop call the function stop_poll() from module echo.
+
+11. Run chat.py, enter your name and a message.
+
+
