@@ -10,6 +10,8 @@ Code the following in function.py
 6. Print the variable answer.
 7. Run function.py.
 
+
+
 Code the following in groups.py
 ------------------------------------
 1. Create a dictionary called robots and assign it the following entries.

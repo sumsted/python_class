@@ -1,3 +1,6 @@
+
+
+
 # function.py
 def power(n, p):
     result = n**p
@@ -19,6 +22,7 @@ for color in colors:
     print(color)
     if color == 'blue':
         print('Go Tigers!')
+
 
 # chat.py
 import echo
