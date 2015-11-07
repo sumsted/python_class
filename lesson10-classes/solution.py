@@ -43,6 +43,7 @@ if __name__ == '__main__':
     my_robot = Robot('Hope', False)
     my_robot.left()
     my_robot.right()
-    my_robot.forward()
+    for i in range(4):
+        my_robot.forward()
     my_robot.distance()
     my_robot.blink(10)

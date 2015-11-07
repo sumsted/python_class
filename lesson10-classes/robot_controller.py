@@ -3,8 +3,8 @@ import time
 import gopigo_client
 
 robot_debug = True
-robot_wait = 2
-robot_speed = 200
+robot_wait = .5
+robot_speed = 100
 
 
 def forward():
@@ -74,14 +74,9 @@ def blink(times=5):
 
 if __name__ == '__main__':
     robot_debug = False
-    forward()
-    forward()
-    forward()
-    left()
     left()
     right()
-    right()
-    backward()
-    backward()
+    forward()
+    forward()
     distance()
-    blink()
+
