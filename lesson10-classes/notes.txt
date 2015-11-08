@@ -1,0 +1,105 @@
+Classes and Objects
+-------------------
+
+Everything is an object
+------------------------
+name some objects...
+
+name some Python objects...
+the type() function
+>>> type(1)
+<class 'int'>
+>>> type('hi')
+<class 'str'>
+>>> type({'a':'b'})
+<class 'dict'>
+>>> type([1,2,3])
+<class 'list'>
+
+Objects have properties
+-----------------------
+Properties are things that describe an object.
+
+Fruit
+    color
+    shape
+    age
+
+Objects can do things
+---------------------
+Fruit
+    ripen()
+
+
+A class is a blueprint for an object
+------------------------------------
+class Fruit:
+    ripe_age = 5
+
+    def __init__(self, name):
+        self.name = name
+        self.color = 'green'
+        self.shape = 'unknown'
+        self.age = 1
+
+    def ripen(self):
+        self.age += 1
+
+    def is_ripe(self):
+        if abs(self.ripen_age - self.age) <= 2:
+            return True
+        else:
+            return False
+
+    def attack(self):
+        if self.name = 'coconut':
+            print('Troll is confused, stumbles and cannot fight back.')
+        else:
+            print('A',self.name,' does not make a very good weapon.'
+            print('Troll strikes a deadly counter blow.')
+
+Instances vs. classes
+---------------------
+An instance is an object created from a class (or blue print).
+You may access functions or attributes on an object instance.
+
+>>> carrot = Fruit('Fred the carrot')
+>>> carrot.color
+'green'
+
+>>> carrot.color = orange
+'orange'
+
+>>> carrot.is_ripe()
+False
+
+>>> carrot.ripen()
+>>> carrot.ripen()
+>>> carrot.ripen()
+>>> carrot.ripen()
+>>> carrot.is_ripe()
+True
+
+>>> carrot.attack()
+'Fred the carrot does not make a very good weapon.'
+'Troll strikes a deadly counter blow.'
+
+
+More on instances
+-----------------
+carrot = Fruit('carrot')
+carrot.color = 'orange'
+carrot.attack()
+'carrot does not make a very good weapon.'
+'Troll strikes a deadly counter blow.'
+
+apple = Fruit('apple')
+apple.color = 'red'
+carrot.attack()
+'apple does not make a very good weapon.'
+'Troll strikes a deadly counter blow.'
+
+coconut = Fruit('coconut')
+coconut.color = 'brown'
+carrot.attack()
+'Troll is confused, stumbles and cannot fight back.'
