@@ -1,0 +1,82 @@
+Classes and Objects
+-------------------
+
+What is a class?
+----------------
+It's a description of a thing. A class tells us the attributes of something, like color, size, age. A class also tells
+us what this 'thing' can do by using functions, like move(), add(), wait().
+
+class ClassName:
+    CLASS_VARIABLE = 3
+
+    def function_name(self, parameter1, parameter2):
+        self.instance_variable1 = parameter1
+        self.instance_variable2 = parameter2
+
+    def function_name2(self)
+        return self.instance_variable1 + instance variable2
+
+
+What is an object?
+------------------
+Where a class describes a thing, an object is the thing. An object is sometimes called an instance of a class.
+
+>>> object = ClassName()
+>>> object.function_name1(1, 2)
+>>> object.function_name2()
+3
+
+What is self?
+-------------------
+Your class can define variables at the same level as the functions. These variables are called class variables.
+There is only one copy of these class variables across all objects. So if you have 2 objects defined from one
+class and you change a class variable, that new value shows up in both objects.
+
+>>> object1 = ClassName()
+>>> object2 = ClassName()
+
+>>> object1.CLASS_VARIABLE = 10
+>>> object2.CLASS_VARIABLE
+10
+
+The 'self' comes into play when you have instance variables. When you create an object the object can access itself
+using the self variable. In this way each object can have it's own values. Variables for an instance, 'self.variable_name',
+must be created inside functions of the object, typically we create instance variables inside the __init__(self) function.
+
+What is __init__()?
+-------------------
+The underscore underscore functions are special functions in python. The __init__() function is one you'll use when
+defining classes. It executed only once when the object is first created. For example:
+
+
+class ClassName:
+    CLASS_VARIABLE = 3
+
+    def __init__(self, parameter1, parameter2):
+        self.instance_variable1 = parameter1
+        self.instance_variable2 = parameter2
+
+    def function_name2(self)
+        return self.instance_variable1 + instance variable2
+
+
+We create the object here.
+
+>>> object = ClassName(1, 2)
+
+Notice that we pass parameters into the class. These parameters are passed to the __init__() function.
+Also notice that the first parameter is self. This is the instance of our class OR you could say it's our object.
+
+Anything we add to self will only affect our instance. This is what lets us have objects that share similar descriptions
+but very different values.
+
+>>> object1 = ClassName(1, 3)
+>>> object2 = ClassName(3, 4)
+
+>>> object1.function_name2()
+4
+>>> object2.function_name1()
+7
+
+Inheritance
+You can have classes that are children of other classes.

@@ -33,17 +33,27 @@ class Robot:
 
 
 if __name__ == '__main__':
-    my_robot = Robot('Scott', True)
-    my_robot.left()
-    my_robot.right()
-    my_robot.forward()
-    my_robot.distance()
-    my_robot.blink(3)
 
-    my_robot = Robot('Hope', False)
-    my_robot.left()
-    my_robot.right()
-    for i in range(4):
+    my_robot = Robot('MattBot', True)
+
+
+    for i in range(5):
         my_robot.forward()
+
+    my_robot.left()
+
+    for i in range(3):
+        my_robot.forward()
+
+    my_robot.right()
+
+    for i in range(3):
+        my_robot.forward()
+
+    my_robot.right()
+
+    for i in range(8):
+        my_robot.forward()
+
     my_robot.distance()
     my_robot.blink(10)

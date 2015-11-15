@@ -1,6 +1,7 @@
 Classes and Objects
 -------------------
 
+
 Everything is an object
 ------------------------
 name some objects...
@@ -15,6 +16,12 @@ the type() function
 <class 'dict'>
 >>> type([1,2,3])
 <class 'list'>
+
+Why use classes?
+----------------
+Use to describe a thing.
+
+You can also use classes to group like functions together, but in Python it may be better to just use a module for that.
 
 Objects have properties
 -----------------------
@@ -63,39 +70,41 @@ Instances vs. classes
 An instance is an object created from a class (or blue print).
 You may access functions or attributes on an object instance.
 
->>> carrot = Fruit('Fred the carrot')
->>> carrot.color
+>>> grape = Fruit('Fred the grape')
+>>> grape.color
 'green'
 
->>> carrot.color = orange
-'orange'
+>>> grape.color = 'red'
+>>> grape
+'red'
 
->>> carrot.is_ripe()
+>>> grape.is_ripe()
 False
 
->>> carrot.ripen()
->>> carrot.ripen()
->>> carrot.ripen()
->>> carrot.ripen()
->>> carrot.is_ripe()
+>>> grape.ripen()
+>>> grape.ripen()
+>>> grape.ripen()
+>>> grape.ripen()
+>>> grape.ripen()
+>>> grape.is_ripe()
 True
 
->>> carrot.attack()
-'Fred the carrot does not make a very good weapon.'
+>>> grape.attack()
+'Fred the grape does not make a very good weapon.'
 'Troll strikes a deadly counter blow.'
 
 
 More on instances
 -----------------
-carrot = Fruit('carrot')
-carrot.color = 'orange'
-carrot.attack()
-'carrot does not make a very good weapon.'
+orange = Fruit('orange')
+orange.color = 'orange'
+orange.attack()
+'orange does not make a very good weapon.'
 'Troll strikes a deadly counter blow.'
 
 apple = Fruit('apple')
 apple.color = 'red'
-carrot.attack()
+apple.attack()
 'apple does not make a very good weapon.'
 'Troll strikes a deadly counter blow.'
 
