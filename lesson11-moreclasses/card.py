@@ -1,4 +1,5 @@
 class Card:
+
     VALUE = {
         'ACE': 1, '2': 2, '3': 3, '4': 4, '5': 5,
         '6': 6, '7': 7, '8': 8, '9': 9, '10': 10,
@@ -20,6 +21,8 @@ class Card:
 
     def __eq__(self, other):
         return self.VALUE[other.rank] == self.VALUE[self.rank]
+
+
 
 if __name__ == '__main__':
     ac = Card('CLUBS', 'ACE')

@@ -9,12 +9,14 @@ us what this 'thing' can do by using functions, like move(), add(), wait().
 class ClassName:
     CLASS_VARIABLE = 3
 
-    def function_name(self, parameter1, parameter2):
+    def function_name1(self, parameter1, parameter2):
         self.instance_variable1 = parameter1
         self.instance_variable2 = parameter2
 
     def function_name2(self)
         return self.instance_variable1 + instance variable2
+
+
 
 
 What is an object?
@@ -25,6 +27,8 @@ Where a class describes a thing, an object is the thing. An object is sometimes 
 >>> object.function_name1(1, 2)
 >>> object.function_name2()
 3
+
+
 
 What is self?
 -------------------
@@ -42,6 +46,8 @@ class and you change a class variable, that new value shows up in both objects.
 The 'self' comes into play when you have instance variables. When you create an object the object can access itself
 using the self variable. In this way each object can have it's own values. Variables for an instance, 'self.variable_name',
 must be created inside functions of the object, typically we create instance variables inside the __init__(self) function.
+
+
 
 What is __init__()?
 -------------------
@@ -62,6 +68,8 @@ class ClassName:
 
 We create the object here.
 
+football = Ball('brown')
+
 >>> object = ClassName(1, 2)
 
 Notice that we pass parameters into the class. These parameters are passed to the __init__() function.
@@ -75,7 +83,7 @@ but very different values.
 
 >>> object1.function_name2()
 4
->>> object2.function_name1()
+>>> object2.function_name2()
 7
 
 Inheritance
