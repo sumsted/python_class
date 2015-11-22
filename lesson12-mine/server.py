@@ -9,8 +9,8 @@
 # 127.0.0.1 is a special address that means connect to the same machine I'm running this on
 # so this is useful when you are runnning the script and minecraft on the same machine
 #address = "127.0.0.1"
-# address = "192.168.42.1"
-address = "192.168.1.102"
+address = "192.168.42.1"
+# address = "192.168.1.102"
 # If you are running the scripts on a machine other than the raspberry pi, then put the rasberry pi's
 # ip address here
 #address = "192.168.1.100"
