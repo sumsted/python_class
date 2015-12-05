@@ -27,9 +27,17 @@ class SimpleMine:
         self.ip = socket.getfqdn()
 
     def reset_world(self):
-        self.mc.setBlocks(-30, 0, -15, 30, 60, 42, block.AIR)
         self.mc.player.setPos(0, 0, 0)
+        self.mc.setBlocks(-50, 0, -50, 50, 50, 50, block.AIR)
+        self.mc.setBlocks(-50, -1, -50, 50, -2, 50, block.SAND)
         self.chat('World reset by ' + self.ip)
+
+    def clear_space(self):
+        pos = self.mc.player.getPos()
+        pos = minecraft.Vec3(int(pos.x), int(pos.y), int(pos.z))
+        self.mc.setBlocks(pos.x-50, pos.y+0, pos.z-50, pos.x+50, pos.y+60, pos.z+42, block.AIR)
+        self.mc.setBlocks(pos.x-50, pos.y-1, pos.z-50, pos.x+50, pos.y-2, pos.z+50, block.SAND)
+        self.chat('Space cleared by ' + self.ip)
 
     def make_thing(self, thing, depth=1):
         pos = self.mc.player.getPos()
@@ -40,8 +48,13 @@ class SimpleMine:
                 idx = 0
                 for b in row:
                     if b != ' ':
+                        color = WoolColors.gray.value
+                        try:
+                            color = SimpleMine.COLORS[b].value
+                        except:
+                            color = WoolColors.gray.value
                         self.mc.setBlock(pos.x + x_delta + 1, pos.y + height, pos.z + idx, block.WOOL.id,
-                                         SimpleMine.COLORS[b].value)
+                                         color)
                     idx += 1
                 height -= 1
         self.chat('Thing made by ' + self.name)
@@ -49,13 +62,26 @@ class SimpleMine:
     def chat(self, message):
         self.mc.postToChat(message)
 
+    def get_pos(self):
+        return self.mc.player.getPos()
 
 if __name__ == '__main__':
+    pass
+    # create object from class SimpleMine()
     steve = SimpleMine('Steve')
-    steve.make_thing(shapes.santa)
 
-    # steve.reset_world()
-    # sm.build_tower()
-    # sm.mc.player.setPos((0,0,0))
-    # pos = sm.mc.player.getPos()
-    # print(str(pos))
+
+    # steve.clear_space()
+
+    steve.chat('Hi from steve')
+    steve.make_thing(shapes.batman,5)
+
+    # clear a space to make things
+
+    # practice making things from shapes.py
+
+    # practice setting the depth of the thing by setting optional parameter in make_thing()
+
+    # create your own thing in shapes and draw it here
+
+    # print your position

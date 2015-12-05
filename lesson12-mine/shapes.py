@@ -126,3 +126,20 @@ santa = [
     "        ee                      ee",
     "          eeeee            eeeee",
     "               eeeeeeeeeeeeee"]
+
+
+batman = [
+
+"      _==/          i     i          X==_",
+"     /XX/            |X___/|            XXXX",
+"   /XXXXX            |XXXXX|            /XXXXX",
+"  |XXXXXXX_         _XXXXXXX_         _/XXXXXX|",
+" XXXXXXXXXXXxxxxxxxXXXXXXXXXXXxxxxxxxXXXXXXXXXXX",
+"|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|",
+' XXXXXX/^^^^"XXXXXXXXXXXXXXXXXXXXXX/^^^^^XXXXXXX',
+"  |XXX|       XXXX/^^XXXXXX/^^XXXX/       |XXX|",
+"    XXXX       XX/    XXXX/    XX/       /XX/",
+'       "X       "      XX/      "      /"'
+]
